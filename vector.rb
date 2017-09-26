@@ -1,4 +1,5 @@
-  class Vector
+ class Vector
+attr_accessor :x, :y
     def initialize(a, b)
       @x = a;
       @y = b; 
@@ -13,4 +14,9 @@
     return Math::sqrt(ans)
     
   end
+  def add( vec )
+    v3 = Vector.new(@x+vec.x,@y+vec.y)
+    return v3
+   end
+
 end
